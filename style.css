@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "mamae";
+    src: url('./assets/moomfonte.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.imagem {
+    max-width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 5px 6px rgb(63, 35, 19);
+
+}
+body {
+    font-family: "mamae";
+    background-color: #ffdabc; 
+    color: rgb(229, 145, 77); 
+    margin: 0;
+    padding: 0;
+    a:link {
+        color: orange;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+a:visited {
+    color: rgb(214, 109, 98);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 57, 57);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 180, 31);
+    background-color: transparent;
+    text-decoration: underline;
+}
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgb(23, 1, 1);
+    border-radius: 10px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header p{
+    margin: 2px 0;
+    color: black;
+}
+h2 {
+    color: rgb(245, 179, 103);
+    border-bottom: 2px solid rgb(187, 68, 88);
+}
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bnt-print{
+    background-color: rgb(241, 207, 159);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#bnt-print:hover{
+    background-color: rgb(255, 111, 0);
+}

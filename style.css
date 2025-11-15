@@ -12,6 +12,7 @@
 
 }
 body {
+    cursor: url('./assets/cursoor.png'), auto;
     font-family: "mamae";
     background-color: #ffdabc; 
     color: rgb(229, 145, 77); 
@@ -67,16 +68,50 @@ h2 {
     justify-content: flex-end;
 }
 
-#bnt-print{
-    background-color: rgb(241, 207, 159);
+#btn-print{
+    background-color: rgb(255, 145, 0);
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#bnt-print:hover{
-    background-color: rgb(255, 111, 0);
+#btn-print:hover{
+    background-color: rgb(255, 179, 122);
+}
+
+.spark-effect {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fad381; 
+  border-radius: 50%;
+  pointer-events: none;
+  
+  /* Garantir que a animação dure 1 segundo e persista no estado final */
+  animation: floatUp 1s forwards; 
+}
+
+@keyframes floatUp {
+  0% {
+    /* Começa na posição do mouse, visível */
+    transform: translate(0, 0) scale(1);
+    opacity: 1; 
+  }
+  
+  /* Adicione um ponto intermediário para definir a elevação antes de desaparecer */
+  70% {
+    /* Move para cima, mas ainda visível */
+    transform: translate(0, -50px) scale(0.5);
+    opacity: 1;
+  }
+  
+  100% {
+    /* No final, move para o ponto mais alto e a opacidade vai a 0 (desaparece) */
+    transform: translate(0, -70px) scale(0); 
+    opacity: 0; 
+  }
 }
